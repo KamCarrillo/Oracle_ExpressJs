@@ -17,16 +17,12 @@ async function run() {
 
         console.log('Connected to the database!');
 
-        // Execute a simple query
-        //const result = await connection.execute(`SELECT * FROM your_table`);
-        //console.log(result.rows);
-
     } catch (err) {
         console.error(err);
     } finally {
         if (connection) {
             try {
-                // Always close the connection
+
                 await connection.close();
             } catch (err) {
                 console.error(err);
