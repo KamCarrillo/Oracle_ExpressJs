@@ -3,10 +3,16 @@ const port = process.env.PORT || 3000,
     app = express();
 
 const oracledb = require('oracledb');
+const userRouter = require("./routes/users");
+
+app.use(express.static("views"))
+app.use(express.urlencoded( {extended: true } ))
+app.use(express.json());
+
+
 
 async function run() {
     let connection;
-
     try {
         // Connect to the database
         connection = await oracledb.getConnection({
@@ -17,12 +23,16 @@ async function run() {
 
         console.log('Connected to the database!');
 
+        // Execute a simple query
+        //const result = await connection.execute(`SELECT * FROM your_table`);
+        //console.log(result.rows);
+
     } catch (err) {
         console.error(err);
     } finally {
         if (connection) {
             try {
-
+                // Always close the connection
                 await connection.close();
             } catch (err) {
                 console.error(err);
@@ -33,20 +43,14 @@ async function run() {
 
 run();
 
-
+app.set("view engine", "ejs")
 
 app.get("/", (req, res)=> {
-    //res.sendStatus(500)
-    //res.json({message: Error})
-    //res.download("index.js")
-    res.render("index")
+    res.render('index');
 })
 
-
-
-console.log("Texto prueba")
-
+app.use("/users", userRouter)
 
 app.listen(port, () => {
-    console.log(`App listening at http://localhost:${port}`);
+    console.log(`Example app listening at http://localhost:${port}`);
 });

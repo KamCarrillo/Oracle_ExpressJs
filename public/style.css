@@ -1,0 +1,162 @@
+:root{
+    --blue: #2d6073;
+    --Verde: #2d9461;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #2d6073;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 50%;
+}
+
+button {
+    background-color: #2d9461;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(45, 109, 48);
+}
+
+nav{
+    background-color: #2d6073;
+
+}
+nav ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav li {
+    margin-right: 20px;
+
+}
+
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #666;
+}
+.navbar {
+    background-color: #2d6073;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar a.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.navbar .search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar input[type="text"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    transition: width 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+.navbar input[type="text"]:focus {
+    width: 200%;
+    border-color: #4CAF50;
+    outline: none;
+}
+.navbar .login-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+.navbar .login-btn:hover {
+    background-color: #45a049;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 40%;
+}
+h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+img {
+
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
