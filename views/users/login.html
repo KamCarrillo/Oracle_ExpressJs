@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Iniciar sesión</h2>
+        <form action= "/users" method = "POST">
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" value = "<%= locals.email %>" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" value = "<%= locals.password%>" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember">
+                <label for="remember">Recordarme</label>
+            </div>
+            <a href="" >¿Olvidaste tu contraseña?</a>
+            <button class="btn">INGRESA</button>
+        </form>
+        <div class="new-client">
+            <button class="create-account-btn">CREAR UNA CUENTA</button>
+        </div>
+    </div>
+</body>
+</html>
