@@ -1,0 +1,154 @@
+--@Autor(es): Carrillo Castañeda Santiago Augusto Kam
+--            Chong Hernandez Samuel
+--@Fecha creacion:  28/05/2024
+--@Descripcion:     Creacion de secuencias
+
+Prompt Secuencia centro_operaciones_seq
+CREATE SEQUENCE centro_operaciones_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Empleado
+CREATE SEQUENCE Empleado_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Medicamento
+CREATE SEQUENCE medicamento_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Lista_medicamentos_nombres
+CREATE SEQUENCE lista_medicamentos_nombres_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Presentacion
+CREATE SEQUENCE presentacion_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Medicamento_Presentacion
+CREATE SEQUENCE medicamento_presentacion_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Inventario_Farmacia
+CREATE SEQUENCE inventario_farmacia_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Evento
+CREATE SEQUENCE evento_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Evento_medicamento
+CREATE SEQUENCE evento_medicamento_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Cliente
+CREATE SEQUENCE cliente_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Pedido
+CREATE SEQUENCE pedido_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Historial_estado_pedido
+CREATE SEQUENCE historial_estado_pedido_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Detalle_pedido
+CREATE SEQUENCE detalle_pedido_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Ubicacion
+CREATE SEQUENCE ubicacion_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
+
+Prompt Secuencia Detalle_pedido_ubicacion
+CREATE SEQUENCE detalle_pedido_ubicacion_seq
+START WITH 1
+INCREMENT BY 1
+NOMAXVALUE
+NOMINVALUE
+NOCYCLE
+NOCACHE
+ORDER;
